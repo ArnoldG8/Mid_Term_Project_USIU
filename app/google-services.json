@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706807486939",
+    "project_id": "midterm-project-ccd5a",
+    "storage_bucket": "midterm-project-ccd5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706807486939:android:d0cc254cf5976efa34affe",
+        "android_client_info": {
+          "package_name": "arnold.aijuka.midterm_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706807486939-7rm9o3buk5ud7e07mvhgfmjftmiji3ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMbqiNRXo9-G4lOiCxLAoNeAhnIqwONpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706807486939-7rm9o3buk5ud7e07mvhgfmjftmiji3ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SignIT</string>
+    <string name="eMail">Email:</string>
+    <string name="MailHint">JohnDoe@gmail.com</string>
+    <string name="Pass">Password:</string>
+    <string name="PassHint">**********</string>
+    <string name="Login">Login</string>
+    <string name="Signup">Signup</string>
+    <string name="fName">First Name:</string>
+    <string name="lName">Last Name:</string>
+    <string name="NameHint">John</string>
+    <string name="lastNameHint">Doe</string>
+    <string name="contact">Phone Number:</string>
+    <string name="contactHint">+254...</string>
+    <string name="Create">Create</string>
+    <string name="Back">Cancel</string>
+    <string name="nope">not set</string>
+    <string name="camera">Access Camera</string>
+</resources>
