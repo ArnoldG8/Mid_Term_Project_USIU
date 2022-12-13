@@ -22,7 +22,7 @@ public class Dashboard extends AppCompatActivity {
     FirebaseFirestore db;
 
     //Button initialisation
-    Button cameraBtn;
+    Button cameraBtn, regCamera;
 
     //Text view
     TextView first;
@@ -46,6 +46,7 @@ public class Dashboard extends AppCompatActivity {
 
         //Button Assignment
         cameraBtn = findViewById(R.id.cameraBtn);
+        regCamera = findViewById(R.id.cameraPicBtn);
 
         //Details
         Details data = new Details();
@@ -79,5 +80,14 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(next);
             }
         });
+
+        regCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent next = new Intent(getApplicationContext(), picCamera.class);
+                startActivity(next);
+            }
+        });
+
     }
 }

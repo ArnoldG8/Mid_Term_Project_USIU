@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.CameraSelector;
 import androidx.camera.core.ImageAnalysis;
+import androidx.camera.core.ImageCapture;
 import androidx.camera.core.Preview;
 import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
@@ -19,6 +20,7 @@ import android.os.Bundle;
 import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
 
 public class Camera extends AppCompatActivity {
     //Initialize variables
@@ -72,11 +74,20 @@ public class Camera extends AppCompatActivity {
         //Setting our preview view from the xml to the cameraX preview instance
         preview.setSurfaceProvider(previewView.getSurfaceProvider());
 
+        //Setting camera picture
+        ImageCapture imageCapture = new ImageCapture.Builder()
+                .setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY).build();
+
         //Creating the image analysis use case
         ImageAnalysis imageAnalysis = new ImageAnalysis.Builder().
                 setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST).build();
 
         //Binding the camera to the preview instance and the camera selector
-        androidx.camera.core.Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, preview);
+        androidx.camera.core.Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, preview, imageCapture, imageAnalysis);
+
+//        imageAnalysis.setAnalyzer();
+//        imageCapture.takePicture(new ImageCapture.OnImageCapturedCallback());
+
+
     }
 }

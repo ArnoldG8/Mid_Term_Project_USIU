@@ -16,4 +16,6 @@
     <string name="Back">Cancel</string>
     <string name="nope">not set</string>
     <string name="camera">Access Camera</string>
+    <string name="cameraPic">Regular Camera</string>
+    <string name="welcome">"Welcome! "</string>
 </resources>
