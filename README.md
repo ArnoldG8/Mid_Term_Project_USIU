@@ -1,1 +1,1 @@
-ujsndfnjslnjksfdn
+This project is a derived solution on sign language interpretation, in this project the use of CameraX API alongside teachable machine tflite models will be used to create a sign language interpretor system.
